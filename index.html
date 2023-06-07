@@ -1,1 +1,27 @@
+<html>
+  
+    
 
+    <script src="https://d5i00000dzouseaj-dev-ed.develop.my.salesforce.com/lightning/lightning.out.js"></script>
+
+    <div id="lightningout"></div>
+
+
+    <script>
+      $Lightning.use(
+        'c:LwcFlowApp', // name of the Lightning app
+        function () {
+          $Lightning.createComponent(
+            'c:LwcFlowAuraComponent', 
+            {}, 
+            'lightningout', 
+            function (cmp) {
+              
+            }
+          );
+        },
+        'https://d5i00000dzouseaj-dev-ed.develop.my.site.com/'
+      );
+    </script>
+ 
+</html>
